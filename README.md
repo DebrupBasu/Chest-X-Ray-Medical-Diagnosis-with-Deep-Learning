@@ -38,18 +38,18 @@ In other words it will predict 'positive' or 'negative' for each of the patholog
 
    With our dataset splits ready, we can now proceed with setting up our model to consume them.
 
-    For this we have used the off-the-shelf ImageDataGenerator class from the Keras framework, which allows us to build a "generator" for images specified in a dataframe.
-    This class also provides support for basic data augmentation such as random horizontal flipping of images.
-    We also use the generator to transform the values in each batch so that their mean is 0 and their standard deviation is 1.
-    This will facilitate model training by standardizing the input distribution.
-    The generator also converts our single channel X-ray images (gray-scale) to a three-channel format by repeating the values in the image across all channels.
-    We wanted this because the pre-trained model that we'll use requires three-channel inputs.
+  For this we have used the off-the-shelf ImageDataGenerator class from the Keras framework, which allows us to build a "generator" for images specified in a dataframe.
+  This class also provides support for basic data augmentation such as random horizontal flipping of images.
+  We also use the generator to transform the values in each batch so that their mean is 0 and their standard deviation is 1.
+  This will facilitate model training by standardizing the input distribution.
+  The generator also converts our single channel X-ray images (gray-scale) to a three-channel format by repeating the values in the image across all channels.
+  We wanted this because the pre-trained model that we'll use requires three-channel inputs.
 
    Since it is mainly a matter of reading and understanding Keras documentation, we have implemented the generator for you. There are a few things to note:
 
-    We normalize the mean and standard deviation of the data
-    We shuffle the input after each epoch.
-    We set the image size to be 320px by 320px
+   We normalize the mean and standard deviation of the data
+   We shuffle the input after each epoch.
+   We set the image size to be 320px by 320px
 
  ### Addressing Class Imbalance:
 
