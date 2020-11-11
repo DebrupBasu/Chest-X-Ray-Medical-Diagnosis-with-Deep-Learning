@@ -69,6 +69,10 @@ In other words it will predict 'positive' or 'negative' for each of the patholog
 Do the same for [utf-8''pretrained_model(1).part1.rar](https://github.com/DebrupBasu/Chest-X-Ray-Medical-Diagnosis-with-Deep-Learning/blob/main/utf-8''pretrained_model(1).part1.rar) and [utf-8''pretrained_model(1).part2.rar](https://github.com/DebrupBasu/Chest-X-Ray-Medical-Diagnosis-with-Deep-Learning/blob/main/utf-8''pretrained_model(1).part2.rar) into a "pretrained_model.h5" file.
 
 Upload these file to the files content of Google Colab.
+
+To train the model run the command in Python Command Prompt: 
+
+`python chest_x_ray_classification_using_densenet121.py`
   
    The input size for each image was set to 224, as each image had a dimension of 224x224 and the images were normalised based on the mean and standard deviation of images in the ImageNet training set. 
    The Batch Size for training is set to 16. We also augment the training data with random horizontal flipping along with scaling and centre cropping. 
@@ -79,6 +83,10 @@ Upload these file to the files content of Google Colab.
 
   ### Testing and Evaluating:
    Now that we have already trained the model, we evaluate it using our test set. We have conveniently used the predict_generator function to generate the predictions for the images in our test set.
+   
+   To evaluate the model run the command in Python Command Prompt: 
+   
+   `python chest_x_ray_classification_using_densenet121.py`
   
   ### Visualizing Learning with GradCAM:
    One of the most common approaches aimed at increasing the interpretability of models for computer vision tasks is to use Class Activation Maps (CAM).
