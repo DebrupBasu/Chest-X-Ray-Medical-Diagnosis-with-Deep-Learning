@@ -70,7 +70,7 @@ Do the same for [utf-8''pretrained_model(1).part1.rar](https://github.com/Debrup
 
 Upload these file to the files content of Google Colab.
 
-To train the model run the command in Python Command Prompt: 
+To train the model run the command in the Python Command Prompt: 
 
 `python chest_x_ray_classification_using_densenet121.py`
   
@@ -84,7 +84,7 @@ To train the model run the command in Python Command Prompt:
   ### Testing and Evaluating:
    Now that we have already trained the model, we evaluate it using our test set. We have conveniently used the predict_generator function to generate the predictions for the images in our test set.
    
-   To evaluate the model run the command in Python Command Prompt: 
+   To evaluate the model run the command in the Python Command Prompt: 
    
    `python chest_x_ray_classification_using_densenet121.py`
   
